@@ -1,0 +1,61 @@
+@import '~bootstrap/scss/bootstrap';
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: var(--font-family-mon);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 8px 15px;
+    // min-width: 100px;
+    cursor: pointer;
+    background-color: unset;
+    border: 2px solid transparent;
+    user-select: none;
+    &.disable {
+        pointer-events: none;
+        opacity: 0.8;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.primary {
+    background-color: var(--white);
+    color: var(--black);
+    border-color: transparent;
+}
+
+.more {
+    color: var(--white);
+    border-radius: unset;
+    padding: 2px 18px;
+    border-left: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+}
+.moreBlack {
+    color: var(--black);
+    border-radius: unset;
+    padding: 2px 18px;
+    border-left: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+}
+.outline {
+    border-radius: unset;
+    border: 4px solid var(--black);
+    width: fit-content;
+    padding: 8px 35px;
+
+    & span {
+        color: var(--black);
+        color: var(--black);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.3554em;
+        text-align: center;
+    }
+}

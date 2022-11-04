@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    z-index: 3;
+
+    top: 72px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.link {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-right: 33px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
