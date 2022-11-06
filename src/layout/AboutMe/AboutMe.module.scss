@@ -1,9 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
 .background {
     background: linear-gradient(90.18deg, #1d1d1d 31.74%, #1d1d1d 90.49%, #1d1d1d 90.49%);
     min-height: 200px;
 }
 .wrapper {
     padding: 54px 0 50px;
+    @include media-breakpoint-down(lg) {
+        text-align: center;
+    }
 
     & h1 {
         font-family: var(--font-family-mon);
@@ -14,6 +18,11 @@
         text-align: left;
         margin-bottom: 20px;
         color: var(--white);
+
+        @include media-breakpoint-down(lg) {
+            font-size: 25px;
+            text-align: center;
+        }
     }
 
     & p {
@@ -21,6 +30,7 @@
         font-size: 15px;
         font-weight: 400;
         line-height: 21px;
+        text-align: justify;
         letter-spacing: 0em;
         margin-bottom: 26px;
         color: var(--white);
@@ -32,6 +42,10 @@
     align-items: center;
     padding-top: 142px;
     min-height: 400px;
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 74px;
+    }
 }
 .about {
     display: flex;
@@ -39,16 +53,25 @@
     align-items: center;
     & > img {
         margin: 85px 0 110px;
+
+        @include media-breakpoint-down(lg) {
+            margin: 66px 0 61px;
+        }
     }
 }
 .content {
     margin: 70px 0;
+    font-family: var(--font-family-mon);
     font-size: 15px;
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: justify;
     color: #050505;
+
+    @include media-breakpoint-down(lg) {
+        margin: 38px 0;
+    }
 }
 .skill {
     position: relative;
@@ -80,4 +103,8 @@
     line-height: 19px;
     letter-spacing: 0em;
     margin-bottom: 80px;
+    text-align: justify;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 40px;
+    }
 }

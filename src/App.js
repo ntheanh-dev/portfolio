@@ -1,21 +1,21 @@
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import { publicRoutes } from "./router";
+import Header from "./layout/Header";
+import Hero from "./layout/Hero";
+import About from "./layout/AboutMe";
+import Skills from "./layout/Skills";
+import Protofolio from "./layout/Portofolio";
+import Contact from "./layout/Contact";
+import Footer from "./layout/Footer";
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          {publicRoutes.map((route, index) => {
-            const Page = route.component
-            return (
-              <Route key={index} path={route.path} element={<Page />} />
-            )
-          })}
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Header />
+      <Hero />
+      <About />
+      <Skills />
+      <Protofolio />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
 import style from './Button.module.scss'
 import { Link } from "react-router-dom";
+import { Link as LinkScrool } from "react-scroll";
 const cx = classNames.bind(style)
 
 function Button({
@@ -16,6 +17,8 @@ function Button({
 
     small = false,
     large = false,
+
+    scroll = false,
 
     className,
 
@@ -51,6 +54,7 @@ function Button({
         more,
         moreBlack,
         outline,
+        scroll,
         text,
         disable,
         small,
@@ -68,9 +72,15 @@ function Button({
     return (
         <Comp className={classes} {..._props}>
             {lefticon && <span className={cx('icon')}>{lefticon}</span>}
-            <span className={cx('title')}>
-                {children}
-            </span>
+            {scroll ? (
+                <LinkScrool to={scroll} spy={true} smooth={true} offset={50} duration={500} >
+                    {children}
+                </LinkScrool>
+            ) : (
+                <span className={cx('title')}>
+                    {children}
+                </span>
+            )}
             {righticon && <span className={cx('icon')}>{lefticon}</span>}
         </Comp>
     );

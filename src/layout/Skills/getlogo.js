@@ -13,7 +13,7 @@ import sql from '../../assets/images/sql.png'
 export const mySkills = [
     {
         img: html,
-        name: 'HTML4'
+        name: 'HTML5'
     },
     {
         img: css,
@@ -42,5 +42,20 @@ export const mySkills = [
     {
         img: figma,
         name: 'FIGMA'
+    }
+]
+
+export const learning = [
+    {
+        img: python,
+        name: 'PYTHON'
+    },
+    {
+        img: cplus,
+        name: 'C++'
+    },
+    {
+        img: sql,
+        name: 'SQL'
     }
 ]

@@ -59,3 +59,14 @@
         text-align: center;
     }
 }
+.scroll {
+    & a {
+        text-decoration: none;
+        user-select: none;
+        color: var(--black);
+
+        &:hover {
+            color: var(--black);
+        }
+    }
+}

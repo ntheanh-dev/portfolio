@@ -21,6 +21,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 // left
 .name {
@@ -60,17 +62,71 @@
     margin-top: 126px;
     color: var(--grayC4c);
     box-shadow: 0px 4px 4px 0px #00000040;
-
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    & + a {
+    & + div {
         margin-left: 30px;
     }
 
     & > svg {
         font-size: 24px;
         color: var(--black);
+    }
+}
+// tablet or mobile
+.bgrTabletorMobile {
+    height: calc(100vh - 57px);
+    background: radial-gradient(44.99% 44.99% at 54.86% 47.98%, rgba(19, 19, 19, 0.006) 0%, rgba(14, 0, 0, 0.201) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 15.1%, rgba(0, 0, 0, 0) 100%),
+        url('../../assets/images/heroinmobile.png');
+    background-repeat: no-repeat;
+    background-position: top / center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-tablet {
+    text-align: center;
+
+    & p:first-child {
+        font-family: var(--font-family-adv);
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: var(--white);
+    }
+
+    & p:last-child {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: var(--white);
+    }
+}
+.socials-tab {
+    padding-top: 28px;
+
+    & svg {
+        font-size: 28px;
+        color: var(--white);
+        margin: 0 16px;
+    }
+}
+.hero {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    z-index: 3;
+
+    & img {
+        height: 90vh;
     }
 }

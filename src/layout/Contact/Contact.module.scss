@@ -1,0 +1,84 @@
+@import '~bootstrap/scss/bootstrap';
+.wapper {
+    padding: 142px 0 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+        padding: 60px 0;
+    }
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        & > input {
+            width: 100%;
+            padding: 0 14px;
+            height: 43px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            text-align: left;
+            color: var(--gray8B8);
+            border: unset;
+            border-left: 4px solid var(--black);
+            border-bottom: 4px solid var(--black);
+
+            background: transparent;
+            & + input {
+                margin-top: 53px;
+            }
+        }
+
+        & button {
+            margin-top: 62px;
+        }
+
+        & textarea {
+            width: 100%;
+            padding: 0 14px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            text-align: left;
+            color: var(--gray8B8);
+            border-left: 4px solid var(--black);
+            border-bottom: 4px solid var(--black);
+            border-top: none;
+            border-right: none;
+            background: transparent;
+            margin-top: 53px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+.text {
+    font-family: var(--font-family-open);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: var(--black);
+    margin: 59px 0 67px;
+
+    @include media-breakpoint-down(lg) {
+        margin: 40px 0 48px;
+    }
+}
+.fence {
+    margin-bottom: 128px;
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 65px;
+    }
+}
