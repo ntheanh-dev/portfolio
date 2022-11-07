@@ -48,13 +48,18 @@ function Header() {
             id: 3,
             title: 'Portfolio',
             path: '/Portfolio'
-        },
-        isTabletOrMobile && {
+        }
+    ]
+
+    if (isTabletOrMobile) {
+        links.push({
+
             id: 4,
             title: 'Contact',
             path: '/Contact'
-        }
-    ]
+
+        })
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -117,7 +122,7 @@ function Header() {
                     <Container className={cx('navbar')} ref={navRef}>
                         {links.map(link => (
                             <Link
-                                to={link.title} spy={true} smooth={true} offset={50} duration={500}
+                                to={link.title} spy={true} smooth={true} offset={50} duration={500 + link.id * 50}
                                 key={link.id}
                                 className={cx('link')}
                             >

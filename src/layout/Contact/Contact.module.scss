@@ -69,16 +69,35 @@
     letter-spacing: 0em;
     text-align: justify;
     color: var(--black);
-    margin: 59px 0 67px;
+    margin-top: 59px;
+    // margin: 59px 0 67px;
+
+    & a {
+        color: var(--black);
+
+        &:hover {
+            color: var(--black);
+            opacity: 0.8;
+        }
+    }
 
     @include media-breakpoint-down(lg) {
-        margin: 40px 0 48px;
+        // margin: 40px 0 48px;
+        margin-top: 40px;
     }
 }
 .fence {
-    margin-bottom: 128px;
+    // margin-bottom: 128px;
+    margin: 67px 0 128px;
 
     @include media-breakpoint-down(lg) {
-        margin-bottom: 65px;
+        // margin-bottom: 65px;
+
+        margin: 48px 0 65px;
+    }
+
+    // download button
+    & > a {
+        text-decoration: none;
     }
 }

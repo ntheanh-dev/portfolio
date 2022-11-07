@@ -92,7 +92,7 @@ a {
     &:hover {
         color: unset;
     }
-    text-decoration: none;
+    text-decoration: none !important;
 }
 img {
     max-width: 100%;

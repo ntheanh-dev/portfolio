@@ -9,8 +9,6 @@ import { useState } from "react";
 
 const cx = classNames.bind(style)
 function Portofolio() {
-
-
     // define section on screen 1: link, 2: sorcecode, 3: link figma
     const [section, setSection] = useState(1)
 
@@ -49,7 +47,7 @@ function Portofolio() {
                             md={4}
                             key={project.id}
                         >
-                            <Fade>
+                            <Fade duration={1000 + project.id * 300} direction='up'>
                                 <div
                                     className={cx('project')}
                                     style={{

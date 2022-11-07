@@ -71,7 +71,7 @@ function Hero() {
                                 <div className={cx('name')}>
                                     <p>Hi, I am</p>
                                     <p className={cx('my-name')}>Nguyen The Anh</p>
-                                    <p className={cx('occupation')}>Front-end Developer / UI Designer</p>
+                                    <p className={cx('occupation')}>Front-end Developer / Editor</p>
                                 </div>
                             </div>
                         </Fade>

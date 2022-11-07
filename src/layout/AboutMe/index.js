@@ -14,7 +14,7 @@ function About() {
             <Container fluid className={cx('background')}>
                 <Container className={cx('wrapper')}>
                     <Fade duration={'1500'} direction={'left'}><h1>Objectives</h1></Fade>
-                    <Fade duration={'1500'} direction={'right'}><p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est. Morbi commodo, eros in dignissim tempus, lacus odio rutrum augue, in semper sem magna quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit. Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet varius turpis vel pharetra. Ut ante justo, consequat vitae elementum tempor, accumsan nec eros. </p></Fade>
+                    <Fade duration={'1500'} direction={'right'}><p>To obtain the position of Interactive JavaScript Developer with Bolt Incorporated where extensive experience and passion for building interactive experiences and proactive problem solving, adept knowledge of Object-Oriented JavaScript, React, modern JS libraries, Backbone CSS, and semantic HTML will be put to maximum use.</p></Fade>
                     <Fade duration={'1500'} direction={'left'}><Button more>READ MORE</Button></Fade>
                 </Container>
             </Container>

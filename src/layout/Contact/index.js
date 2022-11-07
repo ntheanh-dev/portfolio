@@ -14,7 +14,11 @@ function Contact() {
                     <Fade>
                         <Button outline>CONTACT</Button>
                     </Fade>
-                    <p className={cx('text')}>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero viverra facilisis ut ac est.</p>
+                    <p className={cx('text')}>
+                        Adress: Ap 4, Đong Thanh, Hoc Mon, Ho Chi Minh.
+                        <br /><a href="tel:+84 373506362">Phone: +84 373506362</a><br />
+                        <a href="mailto:theanhmgt66@mail.com">Enail: theanhmgt66mail@mail.com</a>
+                    </p>
                     <img className={cx('fence')} src={fence} alt="alt" />
                     <form>
                         <input type={'text'} placeholder={'ENTER YOUR NAME'} />
@@ -23,6 +27,10 @@ function Contact() {
                         <textarea placeholder={'YOUR MESSAGE'} rows={'5'}></textarea>
                         <Button moreBlack>SUBMIT</Button>
                     </form>
+                    <img className={cx('fence')} src={fence} alt="alt" />
+                    <a download='NGUYENTHEANH_CV.pdf' href="ANHTHENGUYEN CD pdf" >
+                        <Button primary>DOWNLOAD MY CV</Button>
+                    </a>
                 </Col>
             </Row>
         </Container>
