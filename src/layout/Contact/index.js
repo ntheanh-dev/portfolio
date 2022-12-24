@@ -28,8 +28,8 @@ function Contact() {
                         <Button moreBlack>SUBMIT</Button>
                     </form>
                     <img className={cx('fence')} src={fence} alt="alt" />
-                    <a download='NGUYENTHEANH_CV.pdf' href="ANHTHENGUYEN CD pdf" >
-                        <Button primary>DOWNLOAD MY CV</Button>
+                    <a download='THEANHNGUYEN_FRONEND_CV.pdf' href="ANHTHENGUYEN CD pdf" >
+                        <Button primary>MY RESUME</Button>
                     </a>
                 </Col>
             </Row>

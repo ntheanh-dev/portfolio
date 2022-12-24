@@ -1,3 +1,4 @@
+@import '~bootstrap/scss/bootstrap';
 .background {
     position: relative;
     height: 100vh;
@@ -34,6 +35,10 @@
         line-height: 47px;
         letter-spacing: 0em;
         color: var(--black);
+
+        @include media-breakpoint-down(xl) {
+            font-size: 35px;
+        }
     }
     & p:nth-child(2) {
         font-family: var(--font-family-rale);
@@ -42,6 +47,10 @@
         line-height: 94px;
         letter-spacing: 0em;
         color: var(--black);
+
+        @include media-breakpoint-down(xl) {
+            font-size: 68px;
+        }
     }
     & p:last-child {
         font-family: var(--font-family-rale);
