@@ -12,7 +12,7 @@ export const defaultProjects = [
     {
         id: 1,
         name: 'MSI STORE',
-        link: 'https://msi-atn.netlify.app/',
+        link: 'https://msi-store.vercel.app/',
         img: slide1,
         imgSource: sourceImg1,
         imgFigma: figmaImg1,
@@ -23,7 +23,7 @@ export const defaultProjects = [
     {
         id: 2,
         name: 'MY PORTOFOLIO',
-        link: 'https://github.com/Theanhmgt/baucua',
+        link: 'https://theanhnguyen.vercel.app/',
         img: slide2,
         imgSource: sourceImg2,
         imgFigma: figmaImg2,

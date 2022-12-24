@@ -15,7 +15,7 @@ function Contact() {
                         <Button outline>CONTACT</Button>
                     </Fade>
                     <p className={cx('text')}>
-                        Adress: Ap 4, Đong Thanh, Hoc Mon, Ho Chi Minh.
+                        Address: Ap 4, Đong Thanh, Hoc Mon, Ho Chi Minh.
                         <br /><a href="tel:+84 373506362">Phone: +84 373506362</a><br />
                         <a href="mailto:theanhmgt66@mail.com">Enail: theanhmgt66mail@mail.com</a>
                     </p>
